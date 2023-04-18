@@ -60,7 +60,8 @@ p {
 }
 
 img {
-  padding-top: 1rem;
+  padding: 1rem;
+  width: 15rem;
 }
 
 .content {

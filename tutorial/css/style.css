@@ -1,0 +1,43 @@
+@font-face {
+    font-family:'Oswald-Bold';
+    src: url('../fonts/Oswald\ Bold.woff2') format('woff2'),
+		url('../fonts/Oswald/Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Oswald-Regular';
+    src: url('../fonts/Oswald/Regular.woff2') format('woff2'),
+		url('../fonts/Oswald/Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Poppins-Bold';
+    src: url('../fonts/Poppins/Bold.woff2') format('woff2'),
+		url('../fonts/Oswald/Regular.woff2') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
+@font-face {
+    font-family:'Poppins-Regular';
+    src: url('../fonts/Poppins/Regular.woff2') format('woff2'),
+		url('../fonts/Poppins/Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
+body {
+    font-family: 'Oswald-Bold';
+}

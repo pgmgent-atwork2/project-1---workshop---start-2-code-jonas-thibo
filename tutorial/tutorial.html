@@ -29,16 +29,15 @@
       </p>
       <ul class="step-list">
         <li>
-          <strong>1.1</strong> Om te beginnen gaan we eerst een map aanmaken
-          voor de website. Deze map noemen we "memory game".
+          Om te beginnen gaan we eerst een map aanmaken voor de website. Deze
+          map noemen we "memory game".
         </li>
         <img src="./images/single-folder.png" alt="Folder-structure-added" />
         <li>
-          <strong>1.2</strong> Daarna gaan we de volgende folders aanmaken:
+          Daarna gaan we de volgende folders aanmaken:
           <ul>
             <li>CSS</li>
             <li>JS</li>
-            <li>IMG</li>
             <li>FONTS</li>
           </ul>
           <img src="./images/folders.png" alt="Folder-structure-image" />
@@ -59,7 +58,7 @@
           </li>
           <script
             async
-            src="//jsfiddle.net/Vexciouz/tvh2x6jc/3/embed/html/dark/"
+            src="//jsfiddle.net/Vexciouz/tvh2x6jc/20/embed/css/dark/"
           ></script>
           <li>
             Kopieër deze code en plaats het in de body tag, in deze code voegen
@@ -82,8 +81,139 @@
             Nu gaan we de JavaScript linken. Dit doen we door de volgende code
             te kopieëren en te plakken in de body tag onderaan.
           </li>
-          <code>&lt;script src="js/main.js"&gt;</script>
-          </code>
+          <em>&lt;script src="js/main.js"&gt;&lt;/script&gt;</em>
+        </ul>
+        <h2>Stap 3 - CSS toevoegen</h2>
+        <p>
+          De CSS code is de styling van de website. Hierin zetten we de kleuren,
+          afmetingen en andere styling van de website.
+        </p>
+        <ul>
+          <li>
+            Nu gaan we de CSS toevoegen. Dit doen we door de volgende code te
+            kopieëren en te plakken in de style.css file.
+          </li>
+          <script
+            async
+            src="//jsfiddle.net/Vexciouz/tvh2x6jc/16/embed/css/dark/"
+          ></script>
+          <li>
+            Hier veranderen we de background naar een regenboog kleur met
+            gradient, we zorgen er ook voor dat onze "game" in het midden komt
+            te staan.
+          </li>
+        </ul>
+        <h2>Stap 4 - JavaScript</h2>
+        <p>
+          De JavaScript code is de logica van de website. Hierin zetten we de
+          functionaliteit van de website.
+        </p>
+        <p><strong>1.</strong> Eerst worden er drie objecten gedefinieerd:</p>
+        <ul>
+          <li>
+            `<strong>Selectors</strong>`: een object dat verwijst naar de
+            verschillende HTML-elementen die we nodig hebben voor de
+            functionaliteit van het spel, zoals het bord, de timer en de knop om
+            het spel te starten.
+          </li>
+          <li>
+            `<strong>State</strong>`: een object dat de huidige status van het
+            spel bijhoudt, zoals het aantal kaarten dat is omgedraaid, het
+            totale aantal omdraaiingen en de totale tijd dat het spel heeft
+            geduurd.
+          </li>
+          <li>
+            `<strong>Dimensions</strong>`: een constante die de dimensie van het
+            bord aangeeft en deze waarde wordt uit de HTML gehaald.
+          </li>
+          <script
+            async
+            src="//jsfiddle.net/Vexciouz/tvh2x6jc/22/embed/js/dark/"
+          ></script>
+        </ul>
+        <p>
+          <strong>2.</strong> Vervolgens wordt de functie
+          `<strong>generateGame</strong>` gedefinieerd. Deze functie wordt
+          gebruikt om het bord te genereren en de kaarten op het bord te
+          plaatsen.
+        </p>
+        <ul>
+          <li>
+            Er wordt gecontroleerd of de dimensie van het bord even is. Als dat
+            niet het geval is, wordt er een foutmelding gegenereerd en wordt het
+            spel niet gestart.
+          </li>
+          <li>
+            Er wordt een array van emojis gedefinieerd die op de kaarten worden
+            geplaatst.
+          </li>
+          <li>
+            Er wordt een ander array gegenereerd door de emoji array te mengen
+            en elke emoji twee keer toe te voegen aan het array. Dit nieuwe
+            array bevat dus twee keer zoveel items als de dimensie van het bord.
+          </li>
+          <li>
+            Er wordt HTML gegenereerd met de items in het nieuwe array en er
+            wordt een nieuw bord gemaakt met deze HTML.
+          </li>
+          <li>Het nieuwe bord vervangt het oude bord.</li>
+          <script
+            async
+            src="//jsfiddle.net/Vexciouz/tvh2x6jc/24/embed/js/dark/"
+          ></script>
+        </ul>
+        <p>
+          <strong>3.</strong> De functie `<strong>pickRandom</strong>` wordt
+          gedefinieerd. Deze functie wordt gebruikt om een willekeurig aantal
+          items uit een array te selecteren.
+        </p>
+        <ul>
+          <li>
+            De functie neemt een array en het gewenste aantal items als
+            parameters.
+          </li>
+          <li>
+            Er wordt een kopie van de array gemaakt en er wordt een lege array
+            `<strong>randomPicks</strong>` gedefinieerd.
+          </li>
+          <li>
+            Er wordt een loop uitgevoerd voor elk gewenst item, waarbij een
+            willekeurig indexnummer wordt gegenereerd en het item op die index
+            wordt toegevoegd aan de `<strong>randomPicks</strong>` array. Het
+            item wordt vervolgens verwijderd uit de gekloonde array, zodat het
+            niet nogmaals wordt geselecteerd.
+          </li>
+          <li>De `<strong>randomPicks</strong>` array wordt geretourneerd.</li>
+          <script
+            async
+            src="//jsfiddle.net/Vexciouz/tvh2x6jc/26/embed/js/dark/"
+          ></script>
+        </ul>
+        <p>
+          <strong>4.</strong> De functie `<strong>shuffle</strong>` wordt
+          gedefinieerd. Deze functie wordt gebruikt om een array willekeurig te
+          mengen.
+        </p>
+        <ul>
+          <li>De functie neemt een array als parameter.</li>
+          <li>
+            Er wordt een kopie van de array gemaakt en er wordt een loop
+            uitgevoerd waarbij elk item in de array wordt verwisseld met een
+            ander item op een willekeurige index.
+          </li>
+          <li>De nieuwe array wordt geretourneerd.</li>
+        </ul>
+        <p>
+          <strong>5.</strong> De functie `<strong>attachEventListeners</strong>`
+          wordt gedefinieerd. Deze functie wordt gebruikt om klikgebeurtenissen
+          aan het document te koppelen.
+        </p>
+        <ul>
+          <li>Er wordt een klikgebeurtenis aan het document gekoppeld.</li>
+          <li>
+            Als er op een kaart wordt geklikt en deze kaart nog niet is
+            omgedraaid, wordt de functie `<strong>flipCard</strong>` opgeroepen
+          </li>
         </ul>
       </ul>
     </div>

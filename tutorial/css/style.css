@@ -55,8 +55,16 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  padding: 1rem 0;
+}
+
 p {
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+li {
+  padding: 10px;
 }
 
 img {

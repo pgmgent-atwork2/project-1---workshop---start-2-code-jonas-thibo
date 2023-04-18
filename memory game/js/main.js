@@ -134,7 +134,7 @@ const flipBackCards = () => {
 
 const checkWinGames = () => {
   const allCards = document.querySelectorAll('.flipped.matched');
-  if (allCards.length === dimensions * 2) {
+  if (allCards.length === dimensions * 4) {
     winGame();
   }
 }

@@ -83,13 +83,13 @@ img {
 }
 
 .content {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 50%;
+  margin: 1rem auto;
 }
 
 footer {
   background: #e15f19;background: linear-gradient(
-    45deg,
+    90deg,
     rgba(0, 158, 223, 1) 0%,
     rgba(255, 210, 0, 1) 25%,
     rgba(230, 40, 14, 1) 75%,

@@ -27,65 +27,353 @@
         Eerst open je uw code-editor
         <a href="https://code.visualstudio.com">Visual Studio Code</a>
       </p>
-      <ul class="step-list">
+      <p>
+        Om te beginnen gaan we eerst een map aanmaken voor de website. Deze map
+        noemen we "memory game".
+      </p>
+      <img src="./images/single-folder.png" alt="Folder-structure-added" />
+      <p>Daarna gaan we de volgende folders aanmaken:</p>
+
+      <ul>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+      <img src="./images/folders.png" alt="Folder-structure-image" />
+      <h2>Stap 2 - Creëer de index.html</h2>
+      <p>
+        De HTML code is de basis van de website. Hierin zetten we de structuur
+        van de website.
+      </p>
+      <ul>
         <li>
-          <strong>1.1</strong> Om te beginnen gaan we eerst een map aanmaken
-          voor de website. Deze map noemen we "memory game".
+          Eerst gaan we de doctype schrijven
+          <code>&lt;!DOCTYPE html&gt;</code>.
         </li>
-        <img src="./images/single-folder.png" alt="Folder-structure-added" />
         <li>
-          <strong>1.2</strong> Daarna gaan we de volgende folders aanmaken:
-          <ul>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>IMG</li>
-            <li>FONTS</li>
-          </ul>
-          <img src="./images/folders.png" alt="Folder-structure-image" />
+          Druk nu op <kbd>!</kbd> op je toetsen bord en daarna <kbd>ENTER</kbd>.
         </li>
-        <h2>Stap 2 - Creëer de index.html</h2>
-        <p>
-          De HTML code is de basis van de website. Hierin zetten we de structuur
-          van de website.
-        </p>
-        <ul>
-          <li>
-            Eerst gaan we de doctype schrijven
-            <code>&lt;!DOCTYPE html&gt;</code>.
-          </li>
-          <li>
-            Druk nu op <kbd>!</kbd> op je toetsen bord en daarna
-            <kbd>ENTER</kbd>.
-          </li>
-          <script
-            async
-            src="//jsfiddle.net/Vexciouz/tvh2x6jc/3/embed/html/dark/"
-          ></script>
-          <li>
-            Kopieër deze code en plaats het in de body tag, in deze code voegen
-            we divs en een button toe om straks onze CSS en JavaScript op te
-            baseren.
-          </li>
-          <script
-            async
-            src="//jsfiddle.net/Vexciouz/tvh2x6jc/10/embed/html/dark/"
-          ></script>
-          <li>
-            Nu gaan we de CSS linken. Dit doen we door de volgende code te
-            kopieëren en te plakken in de head tag.
-          </li>
-          <script
-            async
-            src="//jsfiddle.net/Vexciouz/tvh2x6jc/12/embed/html/dark/"
-          ></script>
-          <li>
-            Nu gaan we de JavaScript linken. Dit doen we door de volgende code
-            te kopieëren en te plakken in de body tag onderaan.
-          </li>
-          <code>&lt;script src="js/main.js"&gt;</script>
-          </code>
-        </ul>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/13/embedded/html/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+        <li>
+          Kopieër deze code en plaats het in de body tag, in deze code voegen we
+          divs en een button toe om straks onze CSS en JavaScript op te baseren.
+        </li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/11/embedded/html/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+        <li>
+          Nu gaan we de CSS linken. Dit doen we door de volgende code te
+          kopieëren en te plakken in de head tag.
+        </li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/15/embedded/html/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+        <li>
+          Nu gaan we de JavaScript linken. Dit doen we door de volgende code te
+          kopieëren en te plakken in de body tag onderaan.
+        </li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/16/embedded/html/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <h2>Stap 3 - CSS toevoegen</h2>
+      <p>
+        De CSS code is de styling van de website. Hierin zetten we de kleuren,
+        afmetingen en andere styling van de website.
+      </p>
+      <ul>
+        <li>
+          Nu gaan we de CSS toevoegen. Dit doen we door de volgende code te
+          kopieëren en te plakken in de style.css file.
+        </li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/18/embedded/css/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+        <li>
+          Hier veranderen we de background naar een regenboog kleur met
+          gradient, we zorgen er ook voor dat onze "game" in het midden komt te
+          staan.
+        </li>
+      </ul>
+      <h2>Stap 4 - JavaScript</h2>
+      <p>
+        De JavaScript code is de logica van de website. Hierin zetten we de
+        functionaliteit van de website.
+      </p>
+      <p><strong>1.</strong> Eerst worden er drie objecten gedefinieerd:</p>
+      <ul>
+        <li>
+          `<strong>Selectors</strong>`: een object dat verwijst naar de
+          verschillende HTML-elementen die we nodig hebben voor de
+          functionaliteit van het spel, zoals het bord, de timer en de knop om
+          het spel te starten.
+        </li>
+        <li>
+          `<strong>State</strong>`: een object dat de huidige status van het
+          spel bijhoudt, zoals het aantal kaarten dat is omgedraaid, het totale
+          aantal omdraaiingen en de totale tijd dat het spel heeft geduurd.
+        </li>
+        <li>
+          `<strong>Dimensions</strong>`: een constante die de dimensie van het
+          bord aangeeft en deze waarde wordt uit de HTML gehaald.
+        </li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/20/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>2.</strong> Vervolgens wordt de functie
+        `<strong>generateGame</strong>` gedefinieerd. Deze functie wordt
+        gebruikt om het bord te genereren en de kaarten op het bord te plaatsen.
+      </p>
+      <ul>
+        <li>
+          Er wordt gecontroleerd of de dimensie van het bord even is. Als dat
+          niet het geval is, wordt er een foutmelding gegenereerd en wordt het
+          spel niet gestart.
+        </li>
+        <li>
+          Er wordt een array van emojis gedefinieerd die op de kaarten worden
+          geplaatst.
+        </li>
+        <li>
+          Er wordt een ander array gegenereerd door de emoji array te mengen en
+          elke emoji twee keer toe te voegen aan het array. Dit nieuwe array
+          bevat dus twee keer zoveel items als de dimensie van het bord.
+        </li>
+        <li>
+          Er wordt HTML gegenereerd met de items in het nieuwe array en er wordt
+          een nieuw bord gemaakt met deze HTML.
+        </li>
+        <li>Het nieuwe bord vervangt het oude bord.</li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/22/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>3.</strong> De functie `<strong>pickRandom</strong>` wordt
+        gedefinieerd. Deze functie wordt gebruikt om een willekeurig aantal
+        items uit een array te selecteren.
+      </p>
+      <ul>
+        <li>
+          De functie neemt een array en het gewenste aantal items als
+          parameters.
+        </li>
+        <li>
+          Er wordt een kopie van de array gemaakt en er wordt een lege array
+          `<strong>randomPicks</strong>` gedefinieerd.
+        </li>
+        <li>
+          Er wordt een loop uitgevoerd voor elk gewenst item, waarbij een
+          willekeurig indexnummer wordt gegenereerd en het item op die index
+          wordt toegevoegd aan de `<strong>randomPicks</strong>` array. Het item
+          wordt vervolgens verwijderd uit de gekloonde array, zodat het niet
+          nogmaals wordt geselecteerd.
+        </li>
+        <li>De `<strong>randomPicks</strong>` array wordt geretourneerd.</li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/24/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>4.</strong> De functie `<strong>shuffle</strong>` wordt
+        gedefinieerd. Deze functie wordt gebruikt om een array willekeurig te
+        mengen.
+      </p>
+      <ul>
+        <li>De functie neemt een array als parameter.</li>
+        <li>
+          Er wordt een kopie van de array gemaakt en er wordt een loop
+          uitgevoerd waarbij elk item in de array wordt verwisseld met een ander
+          item op een willekeurige index.
+        </li>
+        <li>De nieuwe array wordt geretourneerd.</li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/29/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+        <p></p>
+      </ul>
+
+      <strong>5.</strong> De functie `<strong>attachEventListeners</strong>`
+      wordt gedefinieerd. Deze functie wordt gebruikt om klikgebeurtenissen aan
+      het document te koppelen.
+      <ul>
+        <li>Er wordt een klikgebeurtenis aan het document gekoppeld.</li>
+        <li>
+          Als er op een kaart wordt geklikt en deze kaart nog niet is
+          omgedraaid, wordt de functie `<strong>flipCard</strong>` opgeroepen
+        </li>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/31/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>6.</strong> De functie `<strong>startGame()</strong>` start het
+        spel. De startknop wordt uitgeschakeld en de timer begint te lopen.
+      </p>
+      <ul>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/32/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>7.</strong> De `<strong>flipCard</strong>` functie handelt het
+        omdraaien van de kaarten af. Het neemt een `card` parameter, die de
+        kaart is die is aangeklikt. De functie controleert of het spel al is
+        gestart en begint zo nodig een nieuwe timer. Het voegt de `flipped`
+        class toe aan de kaart die is aangeklikt en houdt bij hoeveel kaarten er
+        zijn omgedraaid. Als er twee kaarten zijn omgedraaid, controleert de
+        functie of ze overeenkomen. Als dit het geval is, voegt de functie de
+        `matched` class toe aan de kaarten en controleert of de speler het spel
+        heeft gewonnen. Als er geen match is, draait de functie de kaarten na 1
+        seconde weer terug.
+      </p>
+      <ul>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/35/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>8.</strong> De `flipBackCards` functie draait alle kaarten terug
+        die nog niet gematched zijn. Het reset ook het aantal omgedraaide
+        kaarten naar 0.
+      </p>
+      <ul>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/37/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>9.</strong> De `checkWinGames` functie controleert of alle
+        kaarten zijn gematched en of de speler het spel heeft gewonnen. Als dit
+        het geval is, roept de functie de `winGame` functie aan die de speler
+        feliciteert.
+      </p>
+      <ul>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/38/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>10.</strong> De `winGame` functie laat een alert zien om de
+        speler te feliciteren met het winnen van het spel.
+      </p>
+      <ul>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/40/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <p>
+        <strong>11.</strong> Ten slotte roepen we de `generateGame` en
+        `attachEventListeners` functies aan om het spel te genereren en de event
+        listeners aan de document toe te voegen.
+      </p>
+      <ul>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/41/embedded/js/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
+      </ul>
+      <h4>
+        Als je alles bij elkaar voegt, heb je een werkend memory spel dat
+        gebruik maakt van HTML, CSS en JavaScript!
+      </h4>
+      <p>Zo zal je code eruit zien op het einde!!!</p>
+      <ul>
+        <iframe
+          width="100%"
+          height="300"
+          src="//jsfiddle.net/Vexciouz/urvfbw7j/5/embedded/js,html,css/dark/"
+          allowfullscreen="allowfullscreen"
+          allowpaymentrequest
+          frameborder="0"
+        ></iframe>
       </ul>
     </div>
+    <footer>
+      <h1><em>Made with love for Arteveldehogeschool</em></h1>
+      <p>From Jonas & Thibo</p>
+    </footer>
   </body>
 </html>

@@ -46,7 +46,13 @@ body {
 }
 
 header {
-  background: #e15f19;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 158, 223, 1) 0%,
+    rgba(255, 210, 0, 1) 25%,
+    rgba(230, 40, 14, 1) 75%,
+    rgba(70, 173, 55, 1) 100%
+  );
   padding: 1rem 1rem;
 }
 
@@ -55,8 +61,20 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  padding: 1rem 0;
+}
+
 p {
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+ul {
+  list-style-type: '🍌';
+}
+
+li {
+  padding: 10px;
 }
 
 img {
@@ -65,9 +83,17 @@ img {
 }
 
 .content {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 50%;
+  margin: 1rem auto;
+}
+
+footer {
+  background: #e15f19;background: linear-gradient(
+    90deg,
+    rgba(0, 158, 223, 1) 0%,
+    rgba(255, 210, 0, 1) 25%,
+    rgba(230, 40, 14, 1) 75%,
+    rgba(70, 173, 55, 1) 100%
+  );
+  padding: 1rem 1rem;
 }

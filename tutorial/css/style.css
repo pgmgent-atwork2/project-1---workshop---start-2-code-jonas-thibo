@@ -46,14 +46,9 @@ body {
 }
 
 header {
-  background: linear-gradient(
-    45deg,
-    rgba(0, 158, 223, 1) 0%,
-    rgba(255, 210, 0, 1) 25%,
-    rgba(230, 40, 14, 1) 75%,
-    rgba(70, 173, 55, 1) 100%
-  );
   padding: 1rem 1rem;
+  border-bottom: solid 2px black;
+  text-align: center;
 }
 
 h1 {
@@ -88,12 +83,7 @@ img {
 }
 
 footer {
-  background: #e15f19;background: linear-gradient(
-    90deg,
-    rgba(0, 158, 223, 1) 0%,
-    rgba(255, 210, 0, 1) 25%,
-    rgba(230, 40, 14, 1) 75%,
-    rgba(70, 173, 55, 1) 100%
-  );
+  text-align: center;
+  border-top: solid 2px black;
   padding: 1rem 1rem;
 }

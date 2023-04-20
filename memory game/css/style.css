@@ -1,13 +1,22 @@
 body {
-  font-family: 'Poppins',
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   background: rgb(0, 158, 223);
-  background: linear-gradient(45deg,
-      rgba(0, 158, 223, 1) 0%,
-      rgba(255, 210, 0, 1) 25%,
-      rgba(230, 40, 14, 1) 75%,
-      rgba(70, 173, 55, 1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 158, 223, 1) 0%,
+    rgba(255, 210, 0, 1) 25%,
+    rgba(230, 40, 14, 1) 75%,
+    rgba(70, 173, 55, 1) 100%
+  );
   font-weight: 400;
+  animation: gradient 6s ease infinite;
+  background-size: 400% 400%;
+  height: 100vh;
+}
+
+header {
+  padding-top: 3.5rem;
+  text-align: center;
 }
 
 .game {
@@ -30,7 +39,11 @@ button {
   padding: 2rem;
   border: solid 2px black;
   background: rgb(34, 193, 195);
-  background: linear-gradient(90deg, rgba(0, 158, 223, 1) 0%, rgba(255, 210, 0, 1) 75%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 158, 223, 1) 0%,
+    rgba(255, 210, 0, 1) 75%
+  );
 }
 
 .card {
@@ -67,4 +80,16 @@ button {
 
 .card.flipped .card-back {
   transform: rotateY(0) rotateZ(0);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

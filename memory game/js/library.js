@@ -12,7 +12,6 @@ const pickRandom = (array, items) => {
   return randomPicks
 }
 
-
 const shuffle = array => {
   const clonedArray = [...array]
 
